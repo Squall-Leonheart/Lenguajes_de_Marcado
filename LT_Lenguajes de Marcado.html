@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo Profesional: Lenguajes de Marcado y Formatos de Datos</title>
+
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <style>
+        /* Estilos adicionales para una apariencia más profesional */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; }
+        h1 { text-align: center; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Una Crónica Interactiva de los Lenguajes de Marcado y Formatos de Datos</h1>
+    
+    <div id='timeline-embed' style="width: 100%; height: 650px; border: 1px solid #ddd; border-radius: 8px;"></div>
+
+    <script type="text/javascript">
+      var timeline_json = {
+        "title": {
+            "media": {
+              "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop",
+              "caption": "Del Concepto a la Web Semántica"
+            },
+            "text": {
+              "headline": "La Evolución de los Lenguajes de Marcado y Formatos de Datos",
+              "text": "<p>Un viaje desde la separación de la estructura y el contenido hasta las ricas aplicaciones web de hoy. Esta línea de tiempo explora los hitos clave que definieron cómo interactuamos con la información digital.</p>"
+            }
+        },
+        "events": [
+          {
+            "start_date": { "year": "1969" },
+            "text": {
+              "headline": "GML: La Semilla Conceptual",
+              "text": "En IBM, Charles Goldfarb lidera la creación de <strong>Generalized Markup Language (GML)</strong>. La idea fundamental era describir la estructura de un documento (títulos, párrafos, listas) en lugar de su apariencia."
+            }
+          },
+          {
+            "start_date": { "year": "1986" },
+            "text": {
+              "headline": "SGML: El Estándar Maestro",
+              "text": "GML evoluciona y se formaliza como el estándar ISO <strong>SGML (Standard Generalized Markup Language)</strong>. SGML es el 'ancestro' de casi todos los lenguajes de marcado modernos."
+            },
+            "media": {
+              "url": "https://new.sgml.ch/wp-content/uploads/2017/05/logo2.png",
+              "caption": "Logo representativo de SGML"
+            }
+          },
+          {
+            "start_date": { "year": "1991" },
+            "text": {
+              "headline": "HTML: Nace la World Wide Web",
+              "text": "Tim Berners-Lee crea <strong>HTML (HyperText Markup Language)</strong> como una aplicación simple de SGML para compartir documentos de investigación en el CERN."
+            }
+          },
+          {
+            "start_date": { "year": "1995" },
+            "text": {
+              "headline": "HTML 2.0: La Primera Estandarización",
+              "text": "El IETF publica el RFC 1866, que formaliza <strong>HTML 2.0</strong> como el primer estándar oficial, estableciendo una base común para los navegadores."
+            }
+          },
+          {
+            "start_date": { "year": "1997" },
+            "text": {
+              "headline": "HTML 3.2 y 4.01: Madurez y Separación",
+              "text": "<strong>HTML 4.01</strong> promueve fuertemente la separación de la estructura (HTML) y la presentación, impulsando el uso de <strong>CSS (Cascading Style Sheets)</strong>."
+            }
+          },
+          {
+            "start_date": { "year": "1998" },
+            "text": {
+              "headline": "XML: El Lenguaje Extensible para Datos",
+              "text": "El W3C presenta <strong>XML (eXtensible Markup Language)</strong>. A diferencia de HTML, permite a los desarrolladores crear sus propias etiquetas para describir datos de forma estructurada, facilitando el intercambio de información entre sistemas."
+            },
+            "media": {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/XML_icon.svg/2560px-XML_icon.svg.png",
+              "caption": "Logo oficial de XML"
+            }
+          },
+          {
+            "start_date": { "year": "2000" },
+            "text": {
+              "headline": "XHTML 1.0: HTML se vuelve estricto",
+              "text": "Se lanza <strong>XHTML (eXtensible HTML)</strong>, una reformulación de HTML 4.01 que seguía las estrictas reglas de sintaxis de XML para lograr una web más predecible."
+            }
+          },
+          {
+            "start_date": { "year": "2002" },
+            "text": {
+              "headline": "JSON: La Alternativa Ligera para Datos",
+              "text": "Douglas Crockford especifica y populariza <strong>JSON (JavaScript Object Notation)</strong>. Originalmente derivado de la sintaxis de objetos de JavaScript, se propone como un formato de intercambio de datos mucho más ligero y fácil de 'parsear' que XML. Su simplicidad lo convirtió en el estándar de facto para las APIs web (AJAX)."
+            },
+            "media": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/1200px-JSON_vector_logo.svg.png",
+                "caption": "Logo oficial de JSON"
+            }
+          },
+          {
+            "start_date": { "year": "2014" },
+            "text": {
+              "headline": "HTML5: La Era de la Web Moderna",
+              "text": "Tras una larga colaboración entre W3C y WHATWG, se publica la recomendación oficial de <strong>HTML5</strong>. Introduce elementos semánticos (<code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>), APIs para multimedia (<code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>) y gráficos (<code>&lt;canvas&gt;</code>), convirtiendo la web en una plataforma de aplicaciones completa."
+            },
+            "media": {
+              "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+              "caption": "Logo oficial de HTML5"
+            }
+          }
+        ]
+      };
+
+      // Iniciar TimelineJS
+      window.onload = function() {
+        timeline = new TL.Timeline('timeline-embed', timeline_json);
+      }
+    </script>
+</body>
+</html>
